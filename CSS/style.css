@@ -72,6 +72,7 @@ select {
 input:focus,
 select:focus {
  background-color: #b91450;
+ color: white;
 }
 
 button {
@@ -87,9 +88,14 @@ button {
 }
 
 /* sezione biglietto */
-/* .generatore_ticket {
- display: none;
-} */
+.hidden {
+ opacity: 0;
+ transition: 1s;
+} 
+.show {
+ opacity: 1;
+ transition: 1s;
+} 
 
 .container_ticket {
  width: 100%;
@@ -97,7 +103,7 @@ button {
  background-color: white;
  margin-top: 30px;
  margin-bottom: 30px;
- padding: 20px;
+ padding: 40px;
 }
 
 .row_ticket {
@@ -106,6 +112,7 @@ button {
 }
 
 .box {
+ flex-direction: column;
  text-align: center;
  font-size: 20px;
  font-weight: bold;
@@ -113,6 +120,16 @@ button {
  width: 25%;
 }
 
-.name {
- background-color: grey;
+.box > p {
+ padding: 30px;
+ color: rgb(51, 0, 99);
+}
+.nome.box {
+
+ background-color: rgb(192, 192, 192);
+}
+
+#costo_biglietto {
+ color:rgb(99, 0, 43);
+ line-height: 200%;
 }

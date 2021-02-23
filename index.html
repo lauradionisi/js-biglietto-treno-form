@@ -17,15 +17,16 @@
    <div class="row row_top">
     <div class="flex_item">
      <div class="text"> Nome Cognome</div>
+     <label for="anni"></label>
      <input id="nome_cognome" type="text" placeholder="Inserisci il tuo nome">
     </div>
     <div class="flex_item">
      <div class="text">Km da percorrere</div>
-     <input id="num_km" type="number" min="10">
+     <input id="num_km" type="number">
     </div>
     <div class="flex_item">
      <div class="text">Fascia d'età</div>
-     <select id="num_anni" name="Età">
+     <select id="num_anni" name="eta">
       <option value="Minorenne">Minorenne</option>
       <option value="Maggiorenne">Maggiorenne</option>
       <option value="Over 65">Over 65</option>
@@ -34,35 +35,39 @@
    </div>
    <div class="row row_bottom">
     <div class="btn_container">
-      <button onclick="displayName()" id="btn_1">Genera</button>
-      <button id="btn_2">Annulla</button>
+      <button id="btn_genera" type="button" name="button">Genera</button>
+      <button onclick="reloadPage()" id="btn_annulla" type="button" name="button">Annulla</button>
      </div>
     </div>
   </div>
   </section>
-  <section id="demo" class="generatore_ticket">
+  <section id="biglietto"  class="generatore_ticket hidden">
    <h1 class="titolo">il tuo biglietto</h1>
-   <div class="container_ticket">
+   <div class="container_ticket ">
     <h2>DETTAGLIO PASSEGGERI</h2>
     <div class="row_ticket">
-     <div class="name box">
+     <div class="nome box">
       NOME PASSEGGERO
+      <p id="passenger_name">dsfdsfdfds</p>
 
      </div>
      <div class="discount box">
       Offerta
+      <p id="offerta">fdsfdsf</p>
  
      </div>
      <div class="carriage box">
       Carrozza
+      <p id="carrozza">fdsfds</p>
  
      </div>
      <div class="code_cp box">
       Codice CP
+      <p id="codiceCp">fdsfsd</p>
  
      </div>
-     <div id="costo_biglietto" class="price box">
-      Costo biglietto
+     <div  class="price box">
+      <p id="costo_biglietto">Costo biglietto</p>
  
      </div>
  
